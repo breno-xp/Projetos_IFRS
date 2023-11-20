@@ -1,0 +1,103 @@
+caption{
+    font-size: 1rem;
+    font-family: 'Quicksand';
+    color: rgb(255, 241, 47)
+}
+
+
+main img{
+    width: 20vw;
+}
+
+table{
+    border: 1px solid rgb(71, 71, 71);
+}
+
+thead > tr th{
+    background-color: rgb(236, 68, 68);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+
+tbody tr td, tfoot tr td{
+    border: 1px solid rgb(71, 71, 71);
+}
+
+.des{
+    box-sizing: border-box;
+    padding: .5rem 1rem;
+}
+
+p{
+    font-size: 1.4rem;
+}
+
+main > ul{
+    width: 90vw;
+    box-sizing: border-box;
+    padding: 1.2rem 4rem;
+    margin: 2rem auto;
+    background-color: rgb(182, 31, 31);
+    border: 1px dashed whitesmoke;
+    list-style: georgian;
+}
+
+main > ul > li{
+    font-size: 1.2rem;
+    font-family: 'Quicksand';
+    color: blanchedalmond;
+}
+
+main > ul > li > ul > li{
+    font-size: 1rem;
+    font-family: 'Quicksand';
+    color: blanchedalmond;
+    margin-left: .8rem;
+}
+
+main > ul a{
+    color:rgb(255, 241, 47);
+}
+
+main > ul a:hover{
+    color:rgb(221, 155, 33);
+}
+
+.animation{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background-color: goldenrod;
+    animation: rotate 3s infinite;
+}
+
+@keyframes rotate{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+
+
+
+@media(max-width: 600px){
+    thead > tr th{
+        font-size: 1rem;
+    }
+
+    p{
+        font-size: .8rem;
+    }
+
+    main > ul{
+        padding: .8rem 2rem;
+    }
+
+    main> ul li{
+        font-size: 1rem;
+    }
+
+    main > ul li ul li{
+        font-size: .8rem;
+    }
+}

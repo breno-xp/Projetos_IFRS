@@ -1,0 +1,44 @@
+.f2-container{
+    width: 75%;
+    display: inline-block;
+    margin-right: 4%;
+}
+
+.f2-container > p{
+    display: block;
+}
+
+.chibi_w{
+    width: 16%;
+    min-width: 200px;
+    margin: 0 auto;
+}
+
+.animation{
+    height: .75vh;
+    width: 5vw;
+    min-width: 30px;
+    background-color: rgb(184, 184, 184);
+    position: relative;
+    animation: re 12s infinite;
+    z-index: -1;
+}
+
+@keyframes re{
+    0% {left:0;}
+    50% {left: 90%;}
+    100% {left: 0;}
+}
+
+@media (max-width: 600px) {
+
+    .f2-container{
+        width: 100%;
+    }
+
+    .chibi_w{
+        display: block;
+        margin: 0 auto;
+    }
+
+}
