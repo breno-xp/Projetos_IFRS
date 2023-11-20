@@ -1,0 +1,32 @@
+@import 'style.css';
+
+.ann{
+    width:90%;
+    height:20vw;
+}
+table img{
+    height:22vw;
+    width:40vw;
+}
+.ann a{
+    text-decoration: none;
+    color:#e27066;
+}
+.ann a:hover{
+    text-decoration:line-through;
+    color:#c04a40;
+    font-weight: 900;
+}
+.space{
+    margin: 2.5% 5% 5% 5%;
+}
+
+#spin{
+    width: 50%;
+    margin:0;
+}
+
+p{
+    color:whitesmoke;
+}
+

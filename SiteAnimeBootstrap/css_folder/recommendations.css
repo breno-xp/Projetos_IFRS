@@ -1,0 +1,29 @@
+@import 'style.css';
+
+#list{
+    margin: 0 7.5% 4% 7.5%;
+    padding: 1% 1% 1% 2%;
+    font-family: "Raleway";
+    color: whitesmoke;
+    font-weight: 900;;
+    border: 2px dashed #e34234;
+    background-color: #0e0e0e;
+    list-style-type:georgian;
+}
+ #list > li {
+    margin-bottom: 1%;
+}
+
+#list > li > ul > li{
+    margin: 1% 0 1% 5%;
+}
+
+#list > li > ul > li > a{
+    text-decoration: none;
+    color: #e34234;
+}
+
+#list > li > ul > li > a:hover{
+    color: #9c1d11;
+}
+

@@ -1,0 +1,24 @@
+@import 'style.css';
+
+table{
+    width:90%;
+}
+
+table > tr > td > img{
+    height:10vw;
+}
+
+table a{
+    text-decoration: none;
+    color:#23bd30;
+}
+table a:hover{
+    text-decoration:line-through;
+    color:#13802e;
+    font-weight: 900;
+}
+
+.space{
+    margin: 5% 5% 5% 5%;
+}
+

@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 87vh;
+    background-color: rgb(34, 92, 131);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+#popUp{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 2rem 4rem 1.5rem 4rem;
+    width: clamp(300px, 80vw, 900px);
+    background-color: rgb(43, 43, 43);
+    border-radius: 15px;
+    box-shadow: 1px 2px 3px rgb(15, 15, 15);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: none;
+    box-shadow: 0px 0px 1000px 100px black;
+}
+#popUp > button{
+    width: 80px;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: antiquewhite;
+    padding: 3px 10px;
+    border-radius: 5px;
+    background-color: rgb(180, 65, 19);
+    transition: .25s ease-in-out;
+}
+#popUp > button:hover{
+    background-color: rgb(207, 75, 22);
+}
+
+#box{
+    /* position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0%); */
+    width: clamp(320px, 60vw, 800px);
+    transition: .7s ease-in-out;
+}
+
+#org{
+    color:white;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: rgb(32, 32, 32);
+    border-radius: 7px;
+    padding: 35px 40px 25px 40px;
+    box-shadow: 0px 6px 9px rgb(19, 19, 19);
+    transition: 1s ease-in-out;
+}
+
+#org > hr{
+    height:1px; 
+    width: clamp(150px, 60%, 250px);
+    min-width: 200px;
+    margin: 3px auto;
+    background-color:rgb(235, 235, 235);
+}
+
+#country{
+    margin-top: 15px;
+    height: 1.5rem;
+    width: clamp(200px, 40%, 400px);
+    border-radius: 5px;
+    padding: 1px 7px;
+    text-align: center;
+}
+
+#country:focus{
+    outline: 2px solid rgb(0, 197, 211);
+}
+
+#mButton{
+    font-size: 17px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: antiquewhite;
+    padding: 3px 10px;
+    border-radius: 5px;
+    background-color: lightseagreen;
+    transition: .25s ease-in-out;
+}
+#mButton:hover{
+    background-color: rgb(11, 114, 109);
+}
+
+.cardCollection{
+    
+    /* border: 1px solid red; */
+    margin-top: 50px;
+}
+
+.card{
+    position: relative;
+    left: -150%;
+    border-radius: 7px;
+    transition: 1.65s ease-in-out;
+    box-sizing: border-box;
+    padding: 1em 1.5em;
+    background-color: antiquewhite;
+    box-shadow: 0px 4px 10px 2px rgb(19, 19, 19);
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    display: none;
+}
+
+#c1{
+    margin-top: 0;
+    transition: 1.35s ease-in-out;
+}
+
+#c2{
+    top: 62vh;
+    transition: 1.5s ease-in-out;
+}
+
+#c3{
+    top: 82vh;
+    transition: 1.65s ease-in-out;
+}
+
+@media(max-width: 420px){
+    .card{
+        font-size: .85rem;
+    }
+}
